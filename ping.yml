@@ -1,6 +1,7 @@
 ---
 - name: ping all machines
   hosts: all
+  gather_facts: false
   tasks:
     - name: ping the machines
       ansible.builtin.ping:
